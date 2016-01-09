@@ -1,4 +1,4 @@
-// Демонстрация сборки мусора и метоад finalize();
+// Р”РµРјРѕРЅСЃС‚СЂР°С†РёСЏ СЃР±РѕСЂРєРё РјСѓСЃРѕСЂР° Рё РјРµС‚РѕР°Рґ finalize();
 
 class FDemo {
 	int x;
@@ -8,7 +8,7 @@ class FDemo {
 	}
 
 	protected void finalize(){
-		System.out.println("Финализация " + x);
+		System.out.println("Р¤РёРЅР°Р»РёР·Р°С†РёСЏ " + x);
 	}
 
 	void generator(int i){
