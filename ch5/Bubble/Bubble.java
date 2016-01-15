@@ -7,7 +7,7 @@ class Bubble {
 
 		size = 10;
 
-		System.out.print("Исходный массив: ");
+		System.out.print("РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ: ");
 
 		for(int i = 0; i < size; i++)
 			System.out.print(" " + nums[i]);
@@ -22,7 +22,7 @@ class Bubble {
 					nums[b] = t;
 				}
 			}
-		System.out.print("Отсортированный массив: ");
+		System.out.print("РћС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ: ");
 		for(int i = 0; i < size; i++)
 			System.out.print(" " + nums[i]);
 		System.out.println();
