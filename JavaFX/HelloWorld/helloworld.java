@@ -1,5 +1,3 @@
-package helloworld;
-
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -13,12 +11,12 @@ public class helloworld extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		Button btn = new Button();
-		btn.setText("Say 'Hello World'");
+		btn.setText("Привет мир кнопка");
 		btn.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override
 			public void handle(ActionEvent event) {
-				System.out.println("Hello World!");
+				System.out.println("Привет мир в консоли!");
 			}
 		});
 
@@ -27,7 +25,7 @@ public class helloworld extends Application {
 
 		Scene scene = new Scene(root, 300, 250);
 
-		primaryStage.setTitle("Hello World");
+		primaryStage.setTitle("Привет мир в заголовке");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
