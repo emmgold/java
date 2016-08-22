@@ -1,12 +1,16 @@
 class FailSoftArray {
 	private int a[];
 	private int errval;
-	public int length;
+	private	int length;
 
 	public FailSoftArray(int size, int errv) {
 		a = new int[size];
 		errval = errv;
 		length = size;
+	}
+
+	public int getlen() {
+		return length;
 	}
 
 	public int get(int index) {
@@ -35,10 +39,10 @@ class FSDemo {
 
 		System.out.println("Обратобка ошибок без вывода отчета.");
 
-		for(int i = 0; i < (fs.length * 2); i++)
+		for(int i = 0; i < (fs.getlen() * 2); i++)
 			fs.put(i, i*10);
 
-		for(int i = 0; i < (fs.length * 2); i++) {
+		for(int i = 0; i < (fs.getlen() * 2); i++) {
 			x = fs.get(i);
 
 			if(x != -1) System.out.print(x + " ");
@@ -46,11 +50,11 @@ class FSDemo {
 		System.out.println(" ");
 
 		System.out.println("\nОбработка ошибок с выводом отчета.");
-		for(int i = 0; i < (fs.length * 2); i++)
+		for(int i = 0; i < (fs.getlen() * 2); i++)
 			if (!fs.put(i, i*10))
 				System.out.println("Индекс " + i + " вне допустимого диапазона");
 
-		for (int i = 0; i < (fs.length * 2); i++) {
+		for (int i = 0; i < (fs.getlen() * 2); i++) {
 			x = fs.get(i);
 			if ( x != -1) System.out.print(x + " ");
 			else
