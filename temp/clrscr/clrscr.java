@@ -1,8 +1,8 @@
 class clrscr {
 	public static void main(String args[]) {
 		
-		for(int q = 0; q < 100; q++) 
-			System.out.println();
+//		for(int q = 0; q < 100; q++) 
+//			System.out.println();
 
 		System.out.print("99%");
 		
